@@ -37,7 +37,7 @@ public class BattleSystem : MonoBehaviour
         //calling the coroutine so we can put waits in for anims to play
         StartCoroutine(DoRound());
     }
-
+    //Starting a fight,, and determing who is winner and loser in dance off
     IEnumerator DoRound()
     {
         yield return new WaitForSeconds(battlePrepTime);
@@ -70,7 +70,7 @@ public class BattleSystem : MonoBehaviour
             //Debug.Log("DoRound called, but we have a winner so Game Over");
         }
     }
-
+    //giving a win effect to the team when dance off is fished, but team is still alive
     void FightOver(FightResultData data)
     {
         //Debug.LogWarning("FightOver called, may need to check for winners and/or notify teams of zero mojo dancers");
@@ -84,6 +84,8 @@ public class BattleSystem : MonoBehaviour
         StartCoroutine(HandleFightOver());
     }
 
+
+    //giving a win effect to the team that is won complectly, where in enemy team there is no more dancers
     IEnumerator HandleFightOver()
     {
         yield return new WaitForSeconds(fightWinTime);

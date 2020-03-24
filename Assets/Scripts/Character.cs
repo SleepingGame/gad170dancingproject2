@@ -39,6 +39,7 @@ public class Character : MonoBehaviour
         InitialStats();
     }
 
+    //giving each caracter some stats so that they can actually dance off
     public void InitialStats()
     {
         // TODO - First, you can

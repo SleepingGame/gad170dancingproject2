@@ -29,6 +29,7 @@ public class DanceTeamInit : MonoBehaviour
         GameEvents.OnBattleInitialise -= InitTeams;
     }
 
+    //giving each team a name
     void InitTeams()
     {
         teamA.SetTroupeName("Team A");

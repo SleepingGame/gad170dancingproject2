@@ -25,6 +25,8 @@ public class DanceTeam : MonoBehaviour
     public List<Character> activeDancers;
     public GameObject fightWinContainer;
 
+
+    //dancers being added to the active list in their dance team
     public void AddNewDancer(Character dancer)
     {
         allDancers.Add(dancer);

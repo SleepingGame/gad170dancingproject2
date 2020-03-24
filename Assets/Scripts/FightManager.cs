@@ -32,7 +32,7 @@ public class FightManager : MonoBehaviour
     {
         StartCoroutine(Attack(data.lhs, data.rhs));
     }
-
+    // In this script there is a dance off results between dancers.
     IEnumerator Attack(Character lhs, Character rhs)
     {
         lhs.isSelected = true;
